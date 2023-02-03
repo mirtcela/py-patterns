@@ -46,8 +46,8 @@ class Specification:
         pass
 
     # and operator makes life easier
-    def __and__(self, other):
-        return AndSpecification(self, other)
+    # def __and__(self, other):
+    #     return AndSpecification(self, other)
 
 
 class Filter:
@@ -124,6 +124,6 @@ for p in bf.filter(products, large):
 
 print('Large blue items:')
 # large_blue = AndSpecification(large, ColorSpecification(Color.BLUE))
-large_blue = large & ColorSpecification(Color.BLUE)
+large_blue = large and ColorSpecification(Color.BLUE)
 for p in bf.filter(products, large_blue):
     print(f' - {p.name} is large and blue')
