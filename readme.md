@@ -14,3 +14,5 @@ Folder **SOLID** contains code examples for all principles:
     Interface Segregation Principle
 - **DIP**
     Dependecy Inversion Principle
+
+All other folders contain examples of design patterns and exercises for learning them.
