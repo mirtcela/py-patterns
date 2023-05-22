@@ -14,7 +14,15 @@ class Line:
         self.end = end
 
     def deep_copy(self):
-        return copy.deepcopy(self)
+        new_start = Point(self.start.x, self.start.y)
+        new_end = Point(self.end.x, self.end.y)
+        return Line(new_start, new_end)
+    
+    # another solution
+    # def deep_copy(self):
+    #     new_start = Point(self.start.x, self.start.y)
+    #     new_end = Point(self.end.x, self.end.y)
+    #     return Line(new_start, new_end)
     
     def __str__(self):
         return f'Line from start: {self.start} to end: {self.end}'
