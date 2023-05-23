@@ -1,3 +1,5 @@
+# todo: Need to implement a Builder pattern to form code snippets.
+
 class BasicClass():
     def __init__(self, name):
         self.name = name

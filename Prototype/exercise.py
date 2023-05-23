@@ -1,3 +1,7 @@
+# todo: Implement the deep_copy method to create a deep copy of the Line object.
+# The classes Point and Line are given.
+# This method should return a copy of the Line object with the copied start and end points.
+
 import copy
 
 class Point:
