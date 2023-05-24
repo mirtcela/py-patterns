@@ -7,11 +7,8 @@ class Summable(Iterable, ABC):
     def sum(self):
         result = 0
         for s in self:
-            if type(s.value) == int:
-                result += s.value
-            else:
-                for v in s.value:
-                    result += v
+            for v in s:
+                result += v
         return result
 
                 
@@ -20,7 +17,7 @@ class SingleValue(Summable):
         self.value = value
         
     def __iter__(self):
-        yield self
+        yield self.value
 
     def __str__(self):
         return f'{self.value}'
